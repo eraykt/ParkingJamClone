@@ -16,6 +16,7 @@ public class TriggerController : MonoBehaviour
    {
       yield return new WaitForSeconds(1f);
       Destroy(car);
+      GameManager.Manager.carCount--;
       yield return null;
    }
 }
